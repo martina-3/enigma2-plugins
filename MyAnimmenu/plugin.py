@@ -44,7 +44,7 @@ class AnimmenuScreenMain(ConfigListScreen, Screen):
         self.setTitle(_('Animation menu config'))
 
     def save(self):
-        print '[MyAnimmenu] saving config'
+        print('[MyAnimmenu] saving config')
         for x in self['config'].list:
             x[1].save()
         ConfigListScreen.keySave(self)
